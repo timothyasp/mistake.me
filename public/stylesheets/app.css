@@ -1,0 +1,24 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+/* Startup-weekend Jingle Team Style  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+*/
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+html, body { background: url('../images/backgrounds/linen_texture_huge.jpg') repeat; }
+
+.push { padding-top: 17%; margin-bottom: -8.5%; display: block; }
+
+.center-text { text-align: center; }
+.center-text input[type="text"] { margin: 0 0 16px 0; }
+.center-text h1 { margin: 0 0 24px 0; }
+
+.search { background: url('../images/magnifying_glass.gif') no-repeat; opacity: .6; width: 15px; height: 15px; position: absolute; right: 30px; bottom: 26px; }
+
