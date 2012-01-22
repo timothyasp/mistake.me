@@ -37,8 +37,14 @@ app.post('/', function(request, response) {
 	console.log(request.body.query);
 
 });
-app.get('/test', routes.test);
 */
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.post('/test', function(req, res)	{
+	console.log(req.body.query);
+	res.redirect('back');
+});
+app.get('/test', routes.test);
 
-app.listen(3000);
+app.listen(5000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
