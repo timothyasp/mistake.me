@@ -42,9 +42,12 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.post('/test', function(req, res)	{
 	console.log(req.body.query);
-	res.redirect('back');
+	res.send('yes you can');
+	//res.redirect('back');
 });
 app.get('/test', routes.test);
 
-app.listen(5000);
+// use either the process port for heroku or 3000 dev server
+var port = process.env.PORT || 3000;
+app.listen(port);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
