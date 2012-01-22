@@ -2,10 +2,13 @@
   .row
     .twelve.columns.push
   .row
-    .seven.columns.centered.center-text
-      .panel
-        h1 mishear.me
-        //form(method="post", action="/")
-        //  input.input-text.oversize.custom(type='text', name='query', placeholder='What should i mishear?')
-        //  .search
-        //  input.button.nice.blue.right(type="submit")
+    .seven.columns.centered.query-box
+      h1 Misheard 
+      .input-box
+        form(method="post", id="phrase-input", action="/")
+          input.phrase.input-text.oversize.custom(type='text', name='query', placeholder='What should I mishear?')
+          .search
+          button.prase-submit(type="submit") Submit
+
+.dropdown
+  .ul.dropdown-list
