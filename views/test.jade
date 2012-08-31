@@ -1,0 +1,15 @@
+.container
+  .row
+    .twelve.columns.push
+  .row
+    .seven.columns.centered.center-text
+      .panel
+        h1 mishear.me
+        form(method="post", action="/test")
+          input.phrase.input-text.oversize.custom(type='text', name='query', placeholder='What should i mishear?')
+          .search
+          button.phrase-submit.button.nice.blue.right Submit
+  .row
+    .seven.columns.centered
+      .results
+        

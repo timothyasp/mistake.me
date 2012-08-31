@@ -5,10 +5,11 @@
     .seven.columns.centered.query-box
       h1 Misheard 
       .input-box
-        form(method="post", id="phrase-input", action="/")
-          input.phrase.input-text.oversize.custom(type='text', name='query', placeholder='What should I mishear?')
+        form(method="post", action="/phrase")
+          input.phrase.input-text.oversize.custom(type='text', name='phrase', placeholder='What should I mishear?')
           .search
-          button.prase-submit(type="submit") Submit
+          input.phrase-submit.nice.black.radius(type="submit") Submit
 
-.dropdown
-  .ul.dropdown-list
+  .row
+    .seven.columns.centered.dropdown
+      ul.dropdown-list
